@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "prestart:overlay": "cd overlay && npm run build",
+    "prestart:panel": "cd panel && npm run build",
+    "start:overlay": "cd overlay && npm start",
+    "start:panel": "cd panel && npm start",
+    "start:socket": "cd rocketsocket && npm start",
+    "dev:overlay": "cd overlay && npm run dev",
+    "start:emulator": "cd ../sos-emulator-electron && npm start",
+    "dev:panel": "cd panel && npm run dev",
+    "dev:all": "run-p -cln start:socket dev:overlay dev:panel start:emulator",
+    "prestart:all": "run-p prestart:overlay prestart:panel",
+    "start:all": "run-p -cln start:overlay start:panel start:socket"
+  }
+}
