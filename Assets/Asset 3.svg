@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="788.28" height="49.51" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 788.28 49.51">
+  <defs>
+    <linearGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" x1="0" y1="23.05" x2="788.28" y2="23.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#197c77"/>
+      <stop offset="1" stop-color="#4638ac"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polygon points="739.89 46.1 0 46.1 0 0 788.28 0 739.89 46.1" style="fill: url(#New_Gradient_Swatch_2);"/>
+    <text transform="translate(5 37.55)" style="font-family: Arial-Black, Arial; font-size: 39px;"><tspan x="0" y="0">TEST</tspan><tspan x="112.66" y="0" style="letter-spacing: 0em;">N</tspan><tspan x="144.76" y="0">AME</tspan></text>
+    <text transform="translate(304.4 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(379.48 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(454.55 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(529.63 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(604.71 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(679.79 23.37)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 27px;"><tspan x="0" y="0">3</tspan></text>
+    <text transform="translate(288.49 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">SCORE</tspan></text>
+    <text transform="translate(363.92 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">G</tspan><tspan x="10.83" y="0" style="letter-spacing: -.03em;">O</tspan><tspan x="21.21" y="0">ALS</tspan></text>
+    <text transform="translate(432.77 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">ASSISTS</tspan></text>
+    <text transform="translate(512.86 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">SH</tspan><tspan x="20.22" y="0" style="letter-spacing: -.03em;">O</tspan><tspan x="30.71" y="0">TS</tspan></text>
+    <text transform="translate(587.82 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">S</tspan><tspan x="9.39" y="0" style="letter-spacing: -.06em;">A</tspan><tspan x="18.78" y="0">VES</tspan></text>
+    <text transform="translate(665.86 40.44)" style="fill: #fff; font-family: Arial-Black, Arial; font-size: 13px;"><tspan x="0" y="0">BOOST</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="336.52" height="61.94" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 336.52 61.94">
+  <defs>
+    <linearGradient id="New_Gradient_Swatch_2" data-name="New Gradient Swatch 2" x1="0" y1="30.97" x2="336.52" y2="30.97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#197c77"/>
+      <stop offset="1" stop-color="#4638ac"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <polygon points="288.13 61.94 0 61.94 0 0 336.52 0 288.13 61.94" style="fill: url(#New_Gradient_Swatch_2);"/>
+    <text transform="translate(7.98 40.49)" style="font-family: Arial-Black, Arial; font-size: 39px;"><tspan x="0" y="0">TEMP</tspan><tspan x="121.3" y="0" style="letter-spacing: 0em;">N</tspan><tspan x="153.41" y="0">AME</tspan></text>
+    <polygon points="288.13 61.94 0 61.94 0 51.48 296.29 51.48 288.13 61.94" style="fill: #fff;"/>
+  </g>
+</svg>
