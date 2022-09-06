@@ -35,6 +35,7 @@ export const createSocketConnection = () => {
                     shorten.push("...")
                     players[id].name = shorten.join("");
                 }
+                players[id].tid = bluePlayers.length
                 bluePlayers.push(players[id]);
             }
             if (players[id].team == 1){
@@ -43,6 +44,8 @@ export const createSocketConnection = () => {
                     shorten.push("...")
                     players[id].name = shorten.join("");
                 }
+                players[id].tid = orangePlayers.length
+                console.log(players[id])
                 orangePlayers.push(players[id]);
             }
         })
