@@ -1,4 +1,10 @@
 <script>
+    import {data} from "../scripts/socket"
+    import {resizeToFit} from "../scripts/resizetofit"
+
+    $: {
+        
+    }
 
 </script>
 
