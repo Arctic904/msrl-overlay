@@ -1,7 +1,14 @@
 import socketIOClient from 'socket.io-client';
-import { writable } from "svelte/store"
+import { writable, get } from "svelte/store"
 
 export let data = writable(null);
+export let panelData = writable({
+    blueScore: 0,
+    orngScore: 0,
+    blueName: "",
+    orngName: "",
+    seriesLength: 3
+});
 
 export const createSocketConnection = () => {
     // instantiate socketIOClient connection to localhost
@@ -9,11 +16,11 @@ export const createSocketConnection = () => {
         withCredentials: true,
     });
     socket.on('connect', () => {
-    // emit join message to socket with client ID
-    socket.emit('join', 'FRONTEND');
-    /* emit watchGame message to socket, required for backend server to
-    create and destroy stream on per client ID basis */
-    socket.emit('watchGame');
+        // emit join message to socket with client ID
+        socket.emit('join', 'FRONTEND');
+        /* emit watchGame message to socket, required for backend server to
+        create and destroy stream on per client ID basis */
+        socket.emit('watchGame');
     })
     // on socket message 'update', run logic on that data
     socket.on('update', (update) => {
@@ -67,5 +74,11 @@ export const createSocketConnection = () => {
         data.set(sendData);
 
     }
+    })
+
+    socket.on('payload', (payload) => {
+        console.log(payload)
+        panelData.set(payload.data.contents)
+        console.log(get(panelData))
     })
 }
