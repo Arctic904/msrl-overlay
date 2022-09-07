@@ -77,7 +77,6 @@ export const createSocketConnection = () => {
     })
 
     socket.on('payload', (payload) => {
-        console.log(payload)
         panelData.set(payload.data.contents)
         console.log(get(panelData))
     })

@@ -1,7 +1,4 @@
 import socketIOClient from 'socket.io-client';
-import {writable} from "svelte/store";
-
-export let fileList = writable(null)
 
 let socket;
 export const createPanelConnection = () => {
@@ -20,25 +17,6 @@ export const createPanelConnection = () => {
     })
 }
 
-export const updateSponsors = (idList) => {
-    let sponsorList = []
-    console.log(idList);
-    idList.forEach((value) => {
-        if (document.getElementById(`${value}-checkbox`).checked) {
-            sponsorList.push(document.getElementById(`${value}-image`).src.replace("http://localhost:3001", '.'));
-        }
-    });
-    let data = {
-        data: {
-            event: "update-sponsors",
-            contents: {
-                sponsors: sponsorList
-            },
-        },
-    };
-    console.log(data);
-    socket.emit("payload", data);
-}
 export const updateScreen = () => {
     let data = {
         data: {
@@ -55,19 +33,6 @@ export const updateScreen = () => {
         },
     };
     //data = JSON.parse(data);
-    console.log(data);
-    socket.emit("payload", data);
-}
-export let downloadURL = () => {
-    let data = {
-        data: {
-            event: "sponsor-download",
-            contents: {
-                url: document.getElementById("sponsor-url").value,
-                name: document.getElementById("sponsor-name").value
-            }
-        }
-    }
     console.log(data);
     socket.emit("payload", data);
 }
