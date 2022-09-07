@@ -1,1 +1,1 @@
-npm run installer
+npm i & npm run installer
