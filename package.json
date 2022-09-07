@@ -6,14 +6,18 @@
   "scripts": {
     "prestart:overlay": "cd overlay && npm run build",
     "prestart:panel": "cd panel && npm run build",
-    "start:overlay": "cd overlay && npm start",
-    "start:panel": "cd panel && npm start",
+    "start:overlay": "cd overlay && npm run dev",
+    "start:panel": "cd panel && npm run dev",
     "start:socket": "cd rocketsocket && npm start",
     "dev:overlay": "cd overlay && npm run dev",
     "start:emulator": "cd ../sos-emulator-electron && npm start",
     "dev:panel": "cd panel && npm run dev",
     "dev:all": "run-p -cln start:socket dev:overlay dev:panel",
     "prestart:all": "run-p prestart:overlay prestart:panel",
-    "start:all": "run-p -cln start:overlay start:panel start:socket"
+    "start:all": "run-p -cln start:overlay start:panel start:socket",
+    "installer": "run-s install:overlay install:panel install:socket",
+    "install:overlay": "cd overlay && npm install",
+    "install:panel": "cd panel && npm install",
+    "install:socket": "cd rocketsocket && npm install"
   }
 }

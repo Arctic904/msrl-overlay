@@ -1,0 +1,48 @@
+You will need to install Node.JS for the overlay to function properly. It can be found at https://nodejs.org/en/download/ and the LTS version will work perfectly
+
+First, ensure you have bakkesmod installed and that it is connecting to rocket league properly
+
+Next, go to into the SOS Plugin folder and copy the SOS.dll file.
+
+Paste that file into \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\plugins.
+
+After that, go back to the SOS Plugin folder and copy the sos.set file.
+
+Paste that into \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\plugins\settings.
+
+Next go to \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\cfg and find the plugins.cfg file
+
+Paste plugin load sos into that file.
+
+After you add the SOS plugin we need to allow the overlay to communicate with bakkesmod. We do this by pasting the following into \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\data\rcon_commands.cfg and saving the file
+
+rcon_refresh_allowed
+replay_gui
+
+Now bakkes should open the connection for the overlay when it connects to rocket league.
+
+Next you want to go into the frost overlay folder and into the scripts folder. 
+
+You should see FrostOverlayStart.bat - shortcut.
+
+Copy that file to wherever it is easiest for you to access, something like the desktop or documents folder
+
+<-----------------^^^^ First Time Setup ^^^^----------------->
+
+Now to start the overlay you just run that shortcut and 3 command prompt windows will appear
+One is for the overlay, one for the panel, and one for the connection between the panel, socket, and game.
+
+As long as these windows are open, The overlay will properly work.
+
+To view the overlay, go to http://localhost:63024
+
+To view the panel, go to http://localhost:5000
+
+This is also how you add the overlay into the stream. Just add a browser element and set the url to http://localhost:63024
+
+It is best to toggle off refresh when source becomes active and shutdown source when not active, and its also better if you have your streamlabs set in studio mode so you can make sure everything is correct on the overlay before switching
+
+**NOTE** If you previously had the SOS plugin installed you will need to update it as they have changed the way it works and the overlay will not function properly
+**NOTE** If you have any questions, feel free to message Arctic#5905 on discord. My dms are always open and i try to respond ASAP
+**NOTE** If you happen to find a bug while using the overlay, please try to get a screenshot and send it to me(Arctic) or Tazaro so I can fix it. it is also useful if you have any information on what caused it
+**NOTE** The overlay will not work if the person streaming is also playing. It only functions in spectator mode
