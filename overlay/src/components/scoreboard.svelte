@@ -89,7 +89,7 @@
             <polygon id="blue-tick-3" points="286.75 109.11 306.75 109.11 301.09 90.02 281.09 90.02 286.75 109.11" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>
             <polygon id="blue-tick-4" points="255.26 109.11 275.26 109.11 269.61 90.02 249.61 90.02 255.26 109.11" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>
           </g>
-          <text id="blue-score" transform="translate(25.7 72.31)" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$data?.teams[0].score || ""}</text>
+          <text id="blue-score" transform="translate(25.7 72.31)" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$data?.teams[0].score || 0}</text>
           <text id="blue-name" transform="translate(352.2 60.31)" dominant-baseline="middle" text-anchor="end" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$panelData?.blueName || $data?.teams[0].name || ""}</text>
         </g>
         <g id="orng">
@@ -99,7 +99,7 @@
             <polygon id="orng-tick-3" points="642.57 109.11 622.57 109.11 628.23 90.02 648.23 90.02 642.57 109.11" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>
             <polygon id="orng-tick-4" points="674.06 109.11 654.06 109.11 659.71 90.02 679.71 90.02 674.06 109.11" style="fill: none; stroke: #fff; stroke-miterlimit: 10; stroke-width: 2px;"/>
           </g>
-          <text id="orng-score" transform="translate(879.34 72.31)" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$data?.teams[1].score || ""}</text>
+          <text id="orng-score" transform="translate(879.34 72.31)" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$data?.teams[1].score || 0}</text>
           <text id="orng-name" transform="translate(574.84 60.31)" dominant-baseline="middle" style="fill: #fff; font-family: IntegralCF-DemiBold, &apos;Integral CF&apos;; font-size: 35px; letter-spacing: -.01em;">{$panelData?.orngName || $data?.teams[1].name || ""}</text>
         </g>
       </g>
