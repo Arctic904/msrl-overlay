@@ -21,7 +21,7 @@
         document.getElementById(`${team}-tick-${i}`).style.fill = null
       }
       for(let i = 1; i<=num; i++){
-        document.getElementById(`${team}-tick-${i}`).style.fill = team == "orng" ? "#f7931e" : "blue"
+        document.getElementById(`${team}-tick-${i}`).style.fill = team == "orng" ? "#7D44ED" : "#4CDBB2"
       }
     }
     const blocker = (team, num) => {
@@ -52,13 +52,13 @@
       <linearGradient id="linear-gradient-2" y1="59.89" y2="59.89" xlink:href="#linear-gradient"/>
       <linearGradient id="linear-gradient-3" x1="378.38" y1="99.63" x2="550.81" y2="99.63" xlink:href="#linear-gradient"/>
       <linearGradient id="linear-gradient-4" x1="11.14" y1="59.89" x2="368.37" y2="59.89" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stop-color="blue"/>
+        <stop offset="0" stop-color="#4CDBB2"/>
         <stop offset="1" stop-color="#1a1a1a"/>
       </linearGradient>
       <linearGradient id="linear-gradient-5" x1="11.49" x2="368.76" xlink:href="#linear-gradient-4"/>
       <linearGradient id="linear-gradient-6" x1="10.59" y1="99.63" x2="366.05" y2="99.63" xlink:href="#linear-gradient-4"/>
       <linearGradient id="linear-gradient-7" x1="135.68" y1="59.89" x2="492.91" y2="59.89" gradientTransform="translate(1053.75) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stop-color="#f7931e"/>
+        <stop offset="0" stop-color="#7D44ED"/>
         <stop offset="1" stop-color="#1a1a1a"/>
       </linearGradient>
       <linearGradient id="linear-gradient-8" x1="136.03" x2="493.29" xlink:href="#linear-gradient-7"/>
