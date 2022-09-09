@@ -12,7 +12,11 @@ Paste that into \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\plugins\setting
 
 Next go to \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\cfg and find the plugins.cfg file
 
-Paste plugin load sos into that file.
+Open it in notepad or your text editor of choice and paste 
+
+plugin load sos 
+
+into that file. Save it and close it.
 
 After you add the SOS plugin we need to allow the overlay to communicate with bakkesmod. We do this by pasting the following into \Users\*****\AppData\Roaming\bakkesmod\bakkesmod\data\rcon_commands.cfg and saving the file
 
