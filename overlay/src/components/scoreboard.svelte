@@ -28,7 +28,7 @@
       for(let i = 1; i<=4; i++){
         document.getElementById(`${team}-tick-${i}`).style.display = "block"
       }
-      for(let i = num; i<=4; i++){
+      for(let i = Math.ceil(num / 2) + 1; i<=4; i++){
         document.getElementById(`${team}-tick-${i}`).style.display = "none"
       }
     }
