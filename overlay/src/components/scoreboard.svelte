@@ -18,7 +18,7 @@
 
     const filler = (team, num) => {
       for(let i = 1; i<=4; i++){
-        document.getElementById(`${team}-tick-${i}`).style.fill = null
+        document.getElementById(`${team}-tick-${i}`).style.fill = ""
       }
       for(let i = 1; i<=num; i++){
         document.getElementById(`${team}-tick-${i}`).style.fill = team == "orng" ? "#7D44ED" : "#4CDBB2"
